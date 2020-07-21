@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
+      <Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\ofxDatGui.cpp">
+      <Filter>addons\ofxDatGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPClient.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPServer.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxUDPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OF\addons\ofxPoco\src\ofxXmlPoco.cpp">
+      <Filter>addons\ofxPoco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProgramMode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\aberration.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\airmass.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\angular_separation.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\apparent_position.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\asteroid.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\comet.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\dynamical_time.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\earth.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\elliptic_motion.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\heliocentric_time.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\hyperbolic_motion.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\julian_day.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\jupiter.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\lunar.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\mars.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\mercury.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\neptune.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\nutation.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\parabolic_motion.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\parallax.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\pluto.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\precession.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\proper_motion.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\refraction.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\rise_set.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\saturn.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\sidereal_time.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\solar.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\transform.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\uranus.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\utility.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\venus.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libnova\vsop87.cpp">
+      <Filter>src\libnova</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArtificialSatellite.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BodyNode.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CelestialSphere.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Node.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PointOnBody.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SolarBody.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StarBody.cpp">
+      <Filter>src\actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImportData.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\getTle.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>src\player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui">
+      <UniqueIdentifier>{B36B06DF-1AA4-00D4-5A1B-6893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src">
+      <UniqueIdentifier>{CAA2E9BA-611F-99B2-780A-B8BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\components">
+      <UniqueIdentifier>{8EFE15E2-401E-A657-3818-AD66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\core">
+      <UniqueIdentifier>{6835CAB6-404A-D3AD-148B-CD60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\libs">
+      <UniqueIdentifier>{ABAEF2A2-DCDC-DB83-4614-EB2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
+      <UniqueIdentifier>{A694AB8C-4705-277A-3AC8-2B8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\themes">
+      <UniqueIdentifier>{2646318C-49AB-44C5-70D8-23E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork">
+      <UniqueIdentifier>{01A15744-29A6-108D-08E9-83A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork\src">
+      <UniqueIdentifier>{3D1C10C7-8F35-E796-9C70-F5F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPoco">
+      <UniqueIdentifier>{3256AE3E-9B29-EA27-C842-CE6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPoco\src">
+      <UniqueIdentifier>{C7D4269D-D8A9-A7BB-531B-98DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libnova">
+      <UniqueIdentifier>{6f9e3616-0db5-40e8-a231-37b862dd9ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\actors">
+      <UniqueIdentifier>{916acc62-ab06-4889-b301-c38b582e6995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\data">
+      <UniqueIdentifier>{7b2f15c9-fd8b-4588-b87a-5e9827a71a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\player">
+      <UniqueIdentifier>{b0eaf331-1e4e-436a-9544-f77e9764f738}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGui2dPad.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiButton.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiControls.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiFRM.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiGroups.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiLabel.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiSlider.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiComponent.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiConstants.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiEvents.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h">
+      <Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\ofxDatGui.h">
+      <Filter>addons\ofxDatGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h">
+      <Filter>addons\ofxDatGui\src\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
+      <Filter>addons\ofxDatGui\src\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxNetwork.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxNetworkUtils.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPClient.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPServer.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxUDPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxUDPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OF\addons\ofxPoco\src\ofxXmlPoco.h">
+      <Filter>addons\ofxPoco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\constants.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProgramMode.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\aberration.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\airmass.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\angular_separation.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\apparent_position.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\asteroid.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\comet.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\dynamical_time.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\earth.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\elliptic_motion.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\heliocentric_time.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\hyperbolic_motion.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\julian_day.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\jupiter.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\libnova.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\ln_types.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\lunar.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\mars.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\mercury.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\neptune.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\nutation.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\parabolic_motion.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\parallax.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\pluto.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\precession.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\proper_motion.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\refraction.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\rise_set.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\saturn.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\sidereal_time.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\solar.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\transform.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\uranus.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\utility.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\venus.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libnova\vsop87.h">
+      <Filter>src\libnova</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArtificialSatellite.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BodyNode.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CelestialSphere.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Node.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PointOnBody.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SolarBody.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StarBody.h">
+      <Filter>src\actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsvParser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImportData.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\getTle.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>src\player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

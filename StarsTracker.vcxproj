@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(WindowsTargetPlatformVersion)'==''">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">10.0</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>StarsTracker</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../OF/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../OF/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../OF/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../OF/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>D:\Kuba\CPP\orbitTools\orbit;D:\Kuba\CPP\orbitTools\core;%(AdditionalIncludeDirectories);..\OF\addons\ofxDatGui\src;..\OF\addons\ofxDatGui\src\components;..\OF\addons\ofxDatGui\src\core;..\OF\addons\ofxDatGui\src\libs;..\OF\addons\ofxDatGui\src\libs\ofxSmartFont;..\OF\addons\ofxDatGui\src\themes;..\OF\addons\ofxNetwork\src;..\OF\addons\ofxPoco\libs\poco\include;..\OF\addons\ofxPoco\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);PocoCryptomdd.lib;PocoDatamdd.lib;PocoDataSQLitemdd.lib;PocoFoundationmdd.lib;PocoJSONmdd.lib;PocoNetmdd.lib;PocoNetSSLmdd.lib;PocoPDFmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;PocoZipmdd.lib;iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\OF\addons\ofxPoco\libs\poco\lib\vs\Win32\Debug;..\OF\addons\ofxPoco</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>F:\Kuba\CPP\orbitTools\orbit;F:\Kuba\CPP\orbitTools\core;%(AdditionalIncludeDirectories);..\OF\addons\ofxDatGui\src;..\OF\addons\ofxDatGui\src\components;..\OF\addons\ofxDatGui\src\core;..\OF\addons\ofxDatGui\src\libs;..\OF\addons\ofxDatGui\src\libs\ofxSmartFont;..\OF\addons\ofxDatGui\src\themes;..\OF\addons\ofxNetwork\src;..\OF\addons\ofxPoco\libs\poco\include;..\OF\addons\ofxPoco\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);PocoCryptomdd.lib;PocoDatamdd.lib;PocoDataSQLitemdd.lib;PocoFoundationmdd.lib;PocoJSONmdd.lib;PocoNetmdd.lib;PocoNetSSLmdd.lib;PocoPDFmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;PocoZipmdd.lib;iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\OF\addons\ofxPoco\libs\poco\lib\vs\x64\Debug;..\OF\addons\ofxPoco</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>D:\Kuba\CPP\orbitTools\orbit;D:\Kuba\CPP\orbitTools\core;%(AdditionalIncludeDirectories);..\OF\addons\ofxDatGui\src;..\OF\addons\ofxDatGui\src\components;..\OF\addons\ofxDatGui\src\core;..\OF\addons\ofxDatGui\src\libs;..\OF\addons\ofxDatGui\src\libs\ofxSmartFont;..\OF\addons\ofxDatGui\src\themes;..\OF\addons\ofxNetwork\src;..\OF\addons\ofxPoco\libs\poco\include;..\OF\addons\ofxPoco\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);PocoCryptomd.lib;PocoDatamd.lib;PocoDataSQLitemd.lib;PocoFoundationmd.lib;PocoJSONmd.lib;PocoNetmd.lib;PocoNetSSLmd.lib;PocoPDFmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;PocoZipmd.lib;iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\OF\addons\ofxPoco\libs\poco\lib\vs\Win32\Release;..\OF\addons\ofxPoco</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>D:\Kuba\CPP\orbitTools\orbit;D:\Kuba\CPP\orbitTools\core;%(AdditionalIncludeDirectories);..\OF\addons\ofxDatGui\src;..\OF\addons\ofxDatGui\src\components;..\OF\addons\ofxDatGui\src\core;..\OF\addons\ofxDatGui\src\libs;..\OF\addons\ofxDatGui\src\libs\ofxSmartFont;..\OF\addons\ofxDatGui\src\themes;..\OF\addons\ofxNetwork\src;..\OF\addons\ofxPoco\libs\poco\include;..\OF\addons\ofxPoco\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);PocoCryptomd.lib;PocoDatamd.lib;PocoDataSQLitemd.lib;PocoFoundationmd.lib;PocoJSONmd.lib;PocoNetmd.lib;PocoNetSSLmd.lib;PocoPDFmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;PocoZipmd.lib;iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\OF\addons\ofxPoco\libs\poco\lib\vs\x64\Release;..\OF\addons\ofxPoco</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ArtificialSatellite.cpp" />
+    <ClCompile Include="src\BodyNode.cpp" />
+    <ClCompile Include="src\CelestialSphere.cpp" />
+    <ClCompile Include="src\getTle.cpp" />
+    <ClCompile Include="src\ImportData.cpp" />
+    <ClCompile Include="src\libnova\aberration.cpp" />
+    <ClCompile Include="src\libnova\airmass.cpp" />
+    <ClCompile Include="src\libnova\angular_separation.cpp" />
+    <ClCompile Include="src\libnova\apparent_position.cpp" />
+    <ClCompile Include="src\libnova\asteroid.cpp" />
+    <ClCompile Include="src\libnova\comet.cpp" />
+    <ClCompile Include="src\libnova\dynamical_time.cpp" />
+    <ClCompile Include="src\libnova\earth.cpp" />
+    <ClCompile Include="src\libnova\elliptic_motion.cpp" />
+    <ClCompile Include="src\libnova\heliocentric_time.cpp" />
+    <ClCompile Include="src\libnova\hyperbolic_motion.cpp" />
+    <ClCompile Include="src\libnova\julian_day.cpp" />
+    <ClCompile Include="src\libnova\jupiter.cpp" />
+    <ClCompile Include="src\libnova\lunar.cpp" />
+    <ClCompile Include="src\libnova\mars.cpp" />
+    <ClCompile Include="src\libnova\mercury.cpp" />
+    <ClCompile Include="src\libnova\neptune.cpp" />
+    <ClCompile Include="src\libnova\nutation.cpp" />
+    <ClCompile Include="src\libnova\parabolic_motion.cpp" />
+    <ClCompile Include="src\libnova\parallax.cpp" />
+    <ClCompile Include="src\libnova\pluto.cpp" />
+    <ClCompile Include="src\libnova\precession.cpp" />
+    <ClCompile Include="src\libnova\proper_motion.cpp" />
+    <ClCompile Include="src\libnova\refraction.cpp" />
+    <ClCompile Include="src\libnova\rise_set.cpp" />
+    <ClCompile Include="src\libnova\saturn.cpp" />
+    <ClCompile Include="src\libnova\sidereal_time.cpp" />
+    <ClCompile Include="src\libnova\solar.cpp" />
+    <ClCompile Include="src\libnova\transform.cpp" />
+    <ClCompile Include="src\libnova\uranus.cpp" />
+    <ClCompile Include="src\libnova\utility.cpp" />
+    <ClCompile Include="src\libnova\venus.cpp" />
+    <ClCompile Include="src\libnova\vsop87.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Node.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp" />
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp" />
+    <ClCompile Include="..\OF\addons\ofxDatGui\src\ofxDatGui.cpp" />
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxNetworkUtils.cpp" />
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPClient.cpp" />
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPManager.cpp" />
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxTCPServer.cpp" />
+    <ClCompile Include="..\OF\addons\ofxNetwork\src\ofxUDPManager.cpp" />
+    <ClCompile Include="..\OF\addons\ofxPoco\src\ofxXmlPoco.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PointOnBody.cpp" />
+    <ClCompile Include="src\ProgramMode.cpp" />
+    <ClCompile Include="src\SolarBody.cpp" />
+    <ClCompile Include="src\StarBody.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ArtificialSatellite.h" />
+    <ClInclude Include="src\BodyNode.h" />
+    <ClInclude Include="src\CelestialSphere.h" />
+    <ClInclude Include="src\constants.h" />
+    <ClInclude Include="src\CsvParser.h" />
+    <ClInclude Include="src\getTle.h" />
+    <ClInclude Include="src\ImportData.h" />
+    <ClInclude Include="src\libnova\aberration.h" />
+    <ClInclude Include="src\libnova\airmass.h" />
+    <ClInclude Include="src\libnova\angular_separation.h" />
+    <ClInclude Include="src\libnova\apparent_position.h" />
+    <ClInclude Include="src\libnova\asteroid.h" />
+    <ClInclude Include="src\libnova\comet.h" />
+    <ClInclude Include="src\libnova\dynamical_time.h" />
+    <ClInclude Include="src\libnova\earth.h" />
+    <ClInclude Include="src\libnova\elliptic_motion.h" />
+    <ClInclude Include="src\libnova\heliocentric_time.h" />
+    <ClInclude Include="src\libnova\hyperbolic_motion.h" />
+    <ClInclude Include="src\libnova\julian_day.h" />
+    <ClInclude Include="src\libnova\jupiter.h" />
+    <ClInclude Include="src\libnova\libnova.h" />
+    <ClInclude Include="src\libnova\ln_types.h" />
+    <ClInclude Include="src\libnova\lunar.h" />
+    <ClInclude Include="src\libnova\mars.h" />
+    <ClInclude Include="src\libnova\mercury.h" />
+    <ClInclude Include="src\libnova\neptune.h" />
+    <ClInclude Include="src\libnova\nutation.h" />
+    <ClInclude Include="src\libnova\parabolic_motion.h" />
+    <ClInclude Include="src\libnova\parallax.h" />
+    <ClInclude Include="src\libnova\pluto.h" />
+    <ClInclude Include="src\libnova\precession.h" />
+    <ClInclude Include="src\libnova\proper_motion.h" />
+    <ClInclude Include="src\libnova\refraction.h" />
+    <ClInclude Include="src\libnova\rise_set.h" />
+    <ClInclude Include="src\libnova\saturn.h" />
+    <ClInclude Include="src\libnova\sidereal_time.h" />
+    <ClInclude Include="src\libnova\solar.h" />
+    <ClInclude Include="src\libnova\transform.h" />
+    <ClInclude Include="src\libnova\uranus.h" />
+    <ClInclude Include="src\libnova\utility.h" />
+    <ClInclude Include="src\libnova\venus.h" />
+    <ClInclude Include="src\libnova\vsop87.h" />
+    <ClInclude Include="src\Node.h" />
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGui2dPad.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiButton.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiControls.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiFRM.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiGroups.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiLabel.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiSlider.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiComponent.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiConstants.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiEvents.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\ofxDatGui.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h" />
+    <ClInclude Include="..\OF\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxNetwork.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxNetworkUtils.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPClient.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPManager.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPServer.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxTCPSettings.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxUDPManager.h" />
+    <ClInclude Include="..\OF\addons\ofxNetwork\src\ofxUDPSettings.h" />
+    <ClInclude Include="..\OF\addons\ofxPoco\src\ofxXmlPoco.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\PointOnBody.h" />
+    <ClInclude Include="src\ProgramMode.h" />
+    <ClInclude Include="src\SolarBody.h" />
+    <ClInclude Include="src\StarBody.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\orbitTools\core\core.vcxproj">
+      <Project>{f3067b0d-4f1e-457a-ae9c-aab6ccd5c1a3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\orbitTools\orbit\orbit.vcxproj">
+      <Project>{e7d39150-d44f-426d-b0e2-5acfa19042de}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
